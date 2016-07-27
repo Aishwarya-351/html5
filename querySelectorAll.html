@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Query SelectorAll</title>
+	<script>
+		
+		function my_func1()
+		{
+				var x= document.querySelectorAll("p.id1");
+				x[0].style.color="red";
+				x[1].style.color="red";
+				x[2].style.color="red";
+
+
+		}
+
+	function my_func2()
+		{
+				var x= document.querySelectorAll("p.id2");
+				x[0].style.color="blue";
+				x[1].style.color="blue";
+				x[2].style.color="blue";
+		}
+
+
+
+
+</script>	
+</head>
+
+<body>
+
+<p> <h1><center><b>The color of this line will change according to the even and odd button</b></center></h1></p>
+
+	
+<button onclick="my_func1()">Odd Button</button>
+<button onclick="my_func2()">Even Button</button>
+
+<p class="id1">Odd Line</p>
+<p class="id2">Even Line</p>
+<p class="id1">Odd Line</p>
+<p class="id2">Even Line</p>
+<p class="id1">Odd Line</p>
+<p class="id2">Even Line</p>
+
+</body>
+
+
+
+</html>
